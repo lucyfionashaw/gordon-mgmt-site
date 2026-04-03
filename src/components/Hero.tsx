@@ -32,7 +32,7 @@ function AnimatedHeroTitle() {
       {words.map((word, wi) => (
         <span
           key={wi}
-          className="font-sans-main text-[56px] sm:text-[80px] md:text-[120px] lg:text-[160px] font-semibold leading-[0.9] tracking-[-2px] md:tracking-[-4px] text-white"
+          className="font-sans-main text-[56px] sm:text-[80px] md:text-[120px] lg:text-[160px] font-semibold leading-[0.9] tracking-[-2px] md:tracking-[-4px] text-[var(--color-beige)]"
         >
           <span className="inline-flex overflow-hidden py-[0.2em] -my-[0.2em]">
             {word.text.split("").map((char) => {
@@ -70,12 +70,12 @@ export default function Hero() {
           src="/images/hero-energy.jpg"
           alt="Energy infrastructure"
           fill
-          className="object-cover"
+          className="object-cover sepia-[0.4] brightness-[0.95]"
           priority
           sizes="100vw"
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-maroon-dark)]/70 via-[var(--color-maroon-dark)]/20 to-transparent" />
 
         {/* Text overlay */}
         <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-12">
@@ -85,7 +85,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="font-sans-main text-base md:text-xl font-normal tracking-[-0.4px] text-white/90 text-left max-w-[700px]"
+              className="font-sans-main text-base md:text-xl font-normal tracking-[-0.4px] text-[var(--color-beige)]/80 text-left max-w-[700px]"
             >
               Energy & infrastructure advisory across Europe, the US, and Africa
             </motion.p>
