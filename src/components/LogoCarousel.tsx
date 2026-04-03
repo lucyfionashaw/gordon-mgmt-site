@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const allLogos = [
+const allLogos: { name: string; src: string; className: string; style?: React.CSSProperties }[] = [
   // Past organisations
   { name: "Blackstone", src: "/logos/blackstone.svg", className: "" },
   { name: "IFC", src: "/logos/ifc.svg", className: "!h-6 md:!h-9" },
@@ -16,7 +16,7 @@ const allLogos = [
   // Clients
   { name: "Octopus Energy Generation", src: "/logos/oe-generation.svg", className: "" },
   { name: "Denham Capital", src: "/logos/denham-capital.svg", className: "!h-6 md:!h-8" },
-  { name: "SALT", src: "/logos/salt-logo.png", className: "!h-6 md:!h-8" },
+  { name: "SALT", src: "/logos/salt-logo.png", className: "!h-6 md:!h-8", style: { filter: "brightness(0) saturate(100%) invert(16%) sepia(15%) saturate(1800%) hue-rotate(340deg) brightness(95%) contrast(85%)" } },
   { name: "BasiGo", src: "/logos/basigo-logo.webp", className: "" },
   { name: "Globeleq", src: "/logos/globeleq.svg", className: "" },
 ];
@@ -39,6 +39,7 @@ export default function LogoCarousel() {
               width={140}
               height={56}
               className={`h-9 md:h-14 w-auto object-contain opacity-100 ${logo.className}`}
+              {...(logo.style ? { style: logo.style } : {})}
             />
           </div>
         ))}
@@ -53,6 +54,7 @@ export default function LogoCarousel() {
               width={140}
               height={56}
               className={`h-9 md:h-14 w-auto object-contain opacity-100 ${logo.className}`}
+              {...(logo.style ? { style: logo.style } : {})}
             />
           </div>
         ))}
