@@ -59,12 +59,12 @@ function AnimatedHeroTitle() {
 
 export default function Hero() {
   return (
-    <section className="relative w-full px-4 pb-4 pt-0 overflow-hidden">
+    <section className="relative w-full pb-4 pt-0 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="relative w-full h-[500px] sm:h-[550px] md:h-[650px] lg:h-[750px] rounded-2xl overflow-hidden"
+        className="relative w-full h-[500px] sm:h-[550px] md:h-[650px] lg:h-[750px] overflow-hidden"
       >
         <Image
           src="/images/hero-energy.jpg"
@@ -75,7 +75,7 @@ export default function Hero() {
           sizes="100vw"
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent rounded-2xl" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
 
         {/* Text overlay */}
         <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-10 pb-8 md:pb-12">
