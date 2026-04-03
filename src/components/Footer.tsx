@@ -7,7 +7,7 @@ import { useContactModal } from "./ContactModalContext";
 
 const links = [
   {
-    label: "Newsletter",
+    label: "Slow Burn",
     href: "https://esgstuff.substack.com",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="inline-block align-middle mr-2">
