@@ -13,7 +13,6 @@ const allLogos = [
   { name: "CrossBoundary", src: "/logos/crossboundary-logo.svg", className: "" },
   { name: "UN WFP", src: "/logos/wfp-logo.svg", className: "!h-12 md:!h-16 rounded" },
   { name: "Vena Energy", src: "/logos/vena-group.png", className: "" },
-  { name: "Imperial War Museums", src: "/logos/iwm.svg", className: "!h-8 md:!h-12" },
   // Clients
   { name: "Octopus Energy Generation", src: "/logos/oe-generation.svg", className: "" },
   { name: "Denham Capital", src: "/logos/denham-capital.svg", className: "!h-6 md:!h-8" },

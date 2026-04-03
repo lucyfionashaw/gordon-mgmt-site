@@ -53,7 +53,7 @@ export default function Newsletter() {
           >
             <div className="relative w-full h-full overflow-hidden rounded-xl">
               <Image
-                src="/images/newsletter-portrait-v2.jpg"
+                src="/images/contact-portrait.jpg"
                 alt="Lucy Shaw"
                 fill
                 className="object-cover object-top"
