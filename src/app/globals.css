@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #FAF6F1;
+  --color-dark: #2d2d2d;
+  --color-body: #2a2a2a;
+  --color-text-primary: #555555;
+  --color-accent: #666666;
+  --color-card-bg: #FAF6F1;
+  --color-section-bg: #ffffff;
+  --color-border: #e0e0e0;
+  --color-muted: #8c8e8f;
+  --color-maroon: #6B1D2A;
+  --color-maroon-light: #8B2E3D;
+  --color-maroon-dark: #4A1018;
+  --color-beige: #FAF6F1;
+  --color-beige-dark: #EDE6DA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-sans-main {
+    font-family: var(--font-saans), "Saans-TRIAL", sans-serif;
+  }
+
+  .font-plantin {
+    font-family: var(--font-plantin), "Plantin MT Pro", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+
+  .font-meritocracy {
+    font-family: var(--font-meritocracy), "Meritocracy", "Plantin MT Pro", "Palatino Linotype", serif;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
