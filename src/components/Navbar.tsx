@@ -35,10 +35,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-[var(--color-bg)]/90 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-[var(--color-maroon)] ${
+        scrolled ? "shadow-md" : ""
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-5">
@@ -49,7 +47,7 @@ export default function Navbar() {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="font-sans-main text-[18px] md:text-[20px] font-semibold tracking-[-0.4px] text-[var(--color-maroon)]"
+          className="font-sans-main text-[18px] md:text-[20px] font-semibold tracking-[-0.4px] text-[var(--color-beige)]"
         >
           Gordon Management
         </a>
@@ -60,7 +58,7 @@ export default function Navbar() {
             <button
               key={link.label}
               onClick={() => handleNavClick(link.href)}
-              className="group/link font-sans-main text-[16px] font-medium tracking-[-0.32px] text-[var(--color-dark)] transition-colors hover:text-[var(--color-maroon)] cursor-pointer"
+              className="group/link font-sans-main text-[16px] font-medium tracking-[-0.32px] text-[var(--color-beige)]/80 transition-colors hover:text-[var(--color-beige)] cursor-pointer"
             >
               <RollText text={link.label} />
             </button>
@@ -74,17 +72,17 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-[2px] bg-[var(--color-dark)] transition-transform duration-300 ${
+            className={`block w-6 h-[2px] bg-[var(--color-beige)] transition-transform duration-300 ${
               mobileOpen ? "rotate-45 translate-y-[5px]" : ""
             }`}
           />
           <span
-            className={`block w-6 h-[2px] bg-[var(--color-dark)] transition-opacity duration-300 ${
+            className={`block w-6 h-[2px] bg-[var(--color-beige)] transition-opacity duration-300 ${
               mobileOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-[2px] bg-[var(--color-dark)] transition-transform duration-300 ${
+            className={`block w-6 h-[2px] bg-[var(--color-beige)] transition-transform duration-300 ${
               mobileOpen ? "-rotate-45 -translate-y-[5px]" : ""
             }`}
           />
@@ -106,7 +104,7 @@ export default function Navbar() {
                 <button
                   key={link.label}
                   onClick={() => handleNavClick(link.href)}
-                  className="font-sans-main text-[20px] font-medium tracking-[-0.4px] text-[var(--color-dark)] text-left cursor-pointer"
+                  className="font-sans-main text-[20px] font-medium tracking-[-0.4px] text-[var(--color-beige)] text-left cursor-pointer"
                 >
                   {link.label}
                 </button>
