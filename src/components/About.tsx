@@ -28,9 +28,6 @@ export default function About() {
           <p className="font-sans-main text-lg md:text-[22px] font-normal leading-[1.5] tracking-[-0.24px] text-[var(--color-text-primary)]">
             Gordon Management advises investors, companies, and governments on energy and infrastructure investments, economic development, and climate matters. The firm operates across Europe, the US, and Africa.
           </p>
-          <p className="font-sans-main text-lg md:text-[22px] font-normal leading-[1.5] tracking-[-0.24px] text-[var(--color-text-primary)]">
-            We bring deep sector knowledge and a global network to help our clients navigate the energy transition with confidence.
-          </p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,6 +41,17 @@ export default function About() {
           </p>
         </motion.div>
       </div>
+
+      {/* Full-width accent statement */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="font-sans-main text-[24px] md:text-[32px] lg:text-[36px] font-semibold leading-[1.3] tracking-[-0.5px] md:tracking-[-0.8px] text-[var(--color-maroon)] max-w-[1200px]"
+      >
+        We bring deep sector knowledge and a global network to help our clients navigate the energy transition with confidence.
+      </motion.p>
     </section>
   );
 }
