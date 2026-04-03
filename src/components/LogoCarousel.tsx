@@ -24,7 +24,7 @@ const allLogos = [
 export default function LogoCarousel() {
   return (
     <section className="w-full overflow-hidden py-8 md:py-12">
-      <h3 className="font-sans-main text-base md:text-lg font-medium tracking-[-0.36px] text-[var(--color-dark)]/60 text-center mb-6 md:mb-10">
+      <h3 className="font-sans-main text-lg md:text-2xl font-medium tracking-[-0.48px] text-[var(--color-dark)]/60 text-center mb-6 md:mb-10">
         Our team has experience with a diverse range of global organisations
       </h3>
       <div className="flex animate-scroll w-max">
