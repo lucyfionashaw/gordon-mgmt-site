@@ -49,7 +49,7 @@ export default function Team() {
               Lucy Shaw
             </h3>
             <p className="font-sans-main text-lg md:text-xl font-medium tracking-[-0.4px] text-[var(--color-maroon)]">
-              Founder & Lead
+              Founder & CEO
             </p>
           </div>
 
