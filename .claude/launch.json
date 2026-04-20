@@ -5,7 +5,8 @@
       "name": "gordon-site",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 3000
+      "port": 3002,
+      "autoPort": true
     }
   ]
 }

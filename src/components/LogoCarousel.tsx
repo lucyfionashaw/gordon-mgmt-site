@@ -10,6 +10,8 @@ const allLogos: { name: string; src: string; className: string; style?: React.CS
   { name: "Harvard Business School", src: "/logos/edu-1.svg", className: "" },
   { name: "BCG", src: "/logos/bcg.svg", className: "!h-6 md:!h-9" },
   { name: "Harvard Kennedy School", src: "/logos/hks-logo.svg", className: "!h-6 md:!h-9" },
+  { name: "London School of Economics", src: "/logos/lse.svg", className: "!h-10 md:!h-16" },
+  { name: "Grantham Research Institute", src: "/logos/grantham.png", className: "!h-10 md:!h-14" },
   { name: "CrossBoundary", src: "/logos/crossboundary-logo.svg", className: "" },
   { name: "UN WFP", src: "/logos/wfp-logo.svg", className: "!h-12 md:!h-16 rounded" },
   { name: "Vena Energy", src: "/logos/vena-group.png", className: "" },
